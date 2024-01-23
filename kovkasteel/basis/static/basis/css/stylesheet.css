@@ -1,0 +1,31 @@
+/*body*/
+
+.body {
+    background: url(../img/steel.jpg);
+    background-size: 100%;
+}
+
+
+.page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+/*center*/
+
+.center {
+    display: flex;
+}
+
+.cont {
+    text-align: center;
+    margin: auto;
+
+}
+
+
+

@@ -1,0 +1,19 @@
+{% extends 'basis/basis.html' %}
+
+
+{% block title %}Сделать заказ{% endblock %}
+
+{% block content %}
+
+<form method="post" enctype="multipart/form-data">
+	{% csrf_token %} <br>
+	{{form.name}} <br>
+	{{form.phone}} <br>
+	{{form.email}} <br>
+	{{form.message}} <br>
+	{{form.photo}} <br>
+	<span>{{error}}</span>
+	<button type="submit">Сделать заказ</button>
+</form>
+
+{% endblock %}

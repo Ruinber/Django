@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %}Главная страница{% endblock %}</title>
+	<meta name="viewport" content="width=divice-width, initial-scale=1" >
+	<link rel="stylesheet" href="{% static 'basis/css/stylesheet.css'%}" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="body">
+
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="{% url 'home' %}">KOVKASTEEL</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+			  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		<div class="navbar-nav">
+		  <a class="nav-item nav-link active" href="{% url 'project' %}">О проекте <span class="sr-only"></span></a>
+		  <a class="nav-item nav-link" href="{% url 'services' %}">Услуги</a>
+		  <a class="nav-item nav-link" href="{% url 'project' %}">Работы</a>
+		</div>
+	  </div>
+		<div>
+			<a href="{% url 'client' %}"><button id="button_client" type="button" class="btn btn-outline-secondary">Оставить заявку</button></a>
+		</div>
+	</nav>
+
+<div class="container-fluid text-center" style="height: 100%" >
+	<div class="h-100 d-inline-block">
+		<h2>Художественная ковка изделий различной сложности</h2>
+		<a href="{% url 'client' %}"><button type="button" class="btn btn-danger">Оставить заявку</button></a>
+	</div>
+</div>
+
+
+
+
+
+<div class="fixed-bottom">
+
+    <footer class="text-center text-dark" style="background-color: #f1f1f1;">
+
+	  <div class="container pt-4">
+		<section class="mb-4">
+		  <!-- Facebook -->
+
+			<i class="bi bi-facebook"></i>
+		  <a
+			class="btn btn-link btn-floating btn-lg text-dark m-1"
+			href="#!"
+			role="button"
+			data-mdb-ripple-color="dark"
+			><i class="fab fa-facebook-f"></i
+		  ></a>
+
+		  <!-- Twitter -->
+		  <a
+			class="btn btn-link btn-floating btn-lg text-dark m-1"
+			href="#!"
+			role="button"
+			data-mdb-ripple-color="dark"
+			><i class="fab fa-twitter"></i
+		  ></a>
+
+		  <!-- Google -->
+		  <a
+			class="btn btn-link btn-floating btn-lg text-dark m-1"
+			href="#!"
+			role="button"
+			data-mdb-ripple-color="dark"
+			><i class="fab fa-google"></i
+		  ></a>
+
+		  <!-- Instagram -->
+		  <a
+			class="btn btn-link btn-floating btn-lg text-dark m-1"
+			href="#!"
+			role="button"
+			data-mdb-ripple-color="dark"
+			><i class="fab fa-instagram"></i
+		  ></a>
+
+		  <!-- Linkedin -->
+		  <a
+			class="btn btn-link btn-floating btn-lg text-dark m-1"
+			href="#!"
+			role="button"
+			data-mdb-ripple-color="dark"
+			><i class="fab fa-linkedin"></i
+		  ></a>
+		  <!-- Github -->
+		  <a
+			class="btn btn-link btn-floating btn-lg text-dark m-1"
+			href="#!"
+			role="button"
+			data-mdb-ripple-color="dark"
+			><i class="fab fa-github"></i
+		  ></a>
+			<a
+           class="btn btn-outline-light btn-floating m-1"
+           href="#!"
+           role="button"
+           ><i class="fab fa-github"></i
+          ></a>
+        </section>
+	  </div>
+
+	  <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		© 2020 Copyright:
+		<a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+	  </div>
+    </footer>
+
+</div>
+
+
+</body>
+</html>
